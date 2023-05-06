@@ -197,7 +197,7 @@ for(let i=0;i<prods.length;i+=1)
         localStorage.setItem("prod_title",imgtitle);
         localStorage.setItem("prod_src",imgsrc);
 
-        window.location.href="../Watch.html";
+        window.location.href="../watch.html";
         
     })
 }
