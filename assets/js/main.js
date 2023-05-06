@@ -201,3 +201,72 @@ for(let i=0;i<prods.length;i+=1)
         
     })
 }
+
+
+function cart_add()
+{
+    let card_container=document.getElementById("cart_container");
+
+    let cart_card=document.createAttribute("article");
+    
+    let cart__box=document.createElement("div");
+    let img=document.createElement("img");
+    img.className="cart__img";
+    cart__box.add(img);
+    
+    
+    let cart__details=document.createElement("div");
+    
+    let cart__title=document.createElement("h3");
+    let cart__price=document.createElement("cart__price");
+    cart__details.add(cart__title);
+    cart__details.add(cart__price);
+    
+    
+    
+    let cart__amount=document.createElement("div");
+    cart__amount.className="cart__amount";
+    
+    let cart__amount_content=document.createElement("div");
+    cart__amount_content.className="cart__amount-content";
+    
+    let cart__amount_box1=document.createElement("span");
+    let i1=document.createElement("i");
+    i1.className="bx bx-minus";
+    cart__amount_box1.add(i1)
+    
+    cart__amount_content.add(cart__amount_box1);
+    
+    let cart__amount_number=document.createElement("span");
+    cart__amount_number.className="cart__amount-number";
+    cart__amount_number.innerHTML=1;
+    
+    cart__amount_content.add(cart__amount_number);
+    
+    
+    let cart__amount_box2=document.createElement("span");
+    let i2=document.createElement("i");
+    i2.className="bx bx-plus";
+    cart__amount_box2.add(i2)
+    
+    cart__amount_content.add(cart__amount_box2)
+    cart__amount.add(cart__amount_content);
+    
+    let trash=document.createElement(i);
+    trash.className="bx bx-trash-alt cart__amount-trash";
+    
+    cart__amount.add(trash);
+    
+    cart__details.add(cart__amount);
+    
+    cart_card.add(cart__details);
+    
+    
+    cart_card.className="cart__card";
+    
+    card_container.add(cart_card);
+    
+    
+    
+}
+
