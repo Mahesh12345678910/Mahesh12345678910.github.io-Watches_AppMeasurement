@@ -19,7 +19,7 @@ Join the channel to see more videos like this. [Bedimcode](https://www.youtube.c
 
 Retail Events
 1:Prodview
-2:cartadd
+2:cartadditions
 3:Cart view
 4:Checkout
 5:Purchase
